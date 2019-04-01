@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wojo - EDU</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 600px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 120%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">WOJO</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="./index.html">Home</a></li>
+        <li class="active"><a href="./edu_course.html">Education and Coursework</a></li>
+        <li><a href="./job_internships.html">Job and Internship Experience</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center ">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+
+    <div class="col-sm-8 text-left">
+      <h1>Important Courses</h1>
+      <ul>
+      	<li>ELE 408 Embedded System Design</li>
+      	<li>CSC 412 Operating Systems</li>
+      	<li>Electronics 1</li>
+      	<li>ELE 312 Signas And Systems</li>
+      	<li>Capstone Design</li>
+      	<li>COM 100</li>
+      </ul>
+      <hr>
+      <h3>Capstone Design</h3>
+      <h4>&emsp; &emsp; Cellular Pump Controller</h4>
+      <ul>
+      	<li>3 Person group project; 2 Electrical Engineers; 1 Computer Engineer</li>
+      	<li>Use of management and collaboration systems such as Jira, Bitbucket, Git</li>
+      	<li>Design a pump controller using AWS (Amazon Web Services)
+      		that will report real time sensor data and pump status to AWS
+      	</li>
+      	<li>Pump Controller must take analog voltage data from sensors and
+      		output results to AWS over a cellular connection using PPP(point to point protocol)
+      	</li>
+      	<li>Responsibilities include: AWS interaction with Pump controller, cellular communication between controller and AWS, a web app</li>
+      	<li>Beaglebone microcomputer running linux and Python for sensor interaction and AWS interaction</li>
+      </ul>
+      <hr>
+      <h3>ELE 408 Project</h3>
+      <h4>&emsp; &emsp; Two PLayer Hangman</h4>
+      <ul>
+        <li>A 2 player game that allows a player to play hangman against onether oponent</li>
+        <li>Player 1 picks a difficulty(Ammount of wrong guesses allowed) and a word</li>
+        <li>Player 2 Guesses letters</li>
+        <li>If player 2 guesses a wrong letter player 1 can choose the body part to display</li>
+      </ul>
+      <hr>
+      <h1>Videos</h1>
+      <p class = "text-center">Capstone Presentation (Left) &emsp; &emsp; ELE 408 Project (Right)</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Contact</p>
+  <p>jacobwojoski@gmail.com &emsp; &emsp; &emsp; jwojciechowski@my.uri.edu</p>
+</footer>
+
+</body>
+</html>
